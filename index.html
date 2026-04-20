@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo Falero | Applied AI Data Scientist</title>
+  <meta name="description" content="Applied AI Data Scientist and Founding AI Engineer at Muja.ai. Shipping production AI agents, building analytics pipelines, and solving real problems with machine learning.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Slideshow background -->
+  <div id="bg" aria-hidden="true"></div>
+
+  <!-- Theme toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">[light]</button>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Vignette overlay -->
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Ambient glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-label">// hello world</p>
+      <h1 class="glitch" data-text="Leandro Falero">Leandro Falero</h1>
+      <p class="tagline">Applied AI, analytics, and data science.</p>
+      <div class="typed-area">
+        <span class="cursor-prefix">&gt; </span>
+        <span id="typed-output"></span><span class="cursor">_</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="mailto:leandrofaleroo@gmail.com" class="cta-primary">[say hello]</a>
+        <a href="https://www.linkedin.com/in/leandrofalero/" target="_blank" rel="noopener" class="cta-secondary">[linkedin]</a>
+        <a href="https://github.com/anthropoleo" target="_blank" rel="noopener" class="cta-secondary">[github]</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-label">// about</h2>
+      <div class="about-content">
+  <p>I'm Leo, an Applied AI Data Scientist and Founding AI Engineer at <a href="https://muja.ai" target="_blank" rel="noopener">Muja.ai</a>, based on the Gold Coast.</p>
+  <p>I became interested in Machine Learning back in 2020 after watching a documentary about Cambridge Analytica, a company that used data science to help D. Trump get elected during his first term. I signed up for a course and haven't stopped upskilling since, through self-teaching, learning from colleagues, and completing online qualifications, the most notable being the well-renowned <span class="highlight">Machine Learning Specialization</span> by Andrew Ng and Stanford University.</p>
+  <p>That gave me a solid understanding of classical machine learning and the basic principles behind how these algorithms work. I was fortunate to learn most of this before the advent of GenAI, and before many people began self-branding as AI experts without understanding concepts like gradient descent or XGBoost, and therefore not fully grasping what these models are capable of or their limitations.</p>
+  <p>In my current role, I have shipped over 30 agents to production, developing them from the ground up. I've conducted research and experiments that helped the company qualify for tax benefits due to my work in research and development. This experience taught me many things, including the fundamentals of hypothesis testing and making decisions based on experimental outcomes rather than opinions. It also reinforced the importance of observability and the value of spending countless hours reading logs to continuously refine inputs and outputs. Using this same methodology, I've been able to repeatedly develop dozens of agents with tool access, multimodal capabilities, and more.</p>
+  <p>I prefer simple approaches and avoid unnecessary complexity. In practice, this has proven more effective than blindly following hype or adopting technologies just because they're popular. For example, I independently developed a PowerPoint presentation agent based on the one accessible via the Anthropic API, and was able to <span class="highlight">reduce costs by 95%</span> without any loss in output quality. So when a self-taught engineer can significantly improve an AI agent built by one of the world's leading labs, it says something about the strength of my approach.</p>
+</div>
+
+        <div class="about-details">
+          <div class="about-block">
+            <h3>experience</h3>
+            <ul>
+              <li><span class="highlight">Muja.ai</span> — Founding AI Engineer <span class="dim">(2025–present)</span></li>
+              <li><span class="highlight">Data Organica</span> — Data Scientist <span class="dim">(2024–present)</span></li>
+              <li><span class="highlight">Loan Market Group</span> — Data & Insights Analyst <span class="dim">(2022–2023)</span></li>
+            </ul>
+          </div>
+          <div class="about-block">
+            <h3>certifications</h3>
+            <ul>
+              <li>Google Data Analytics Specialization (Google)</li>
+              <li>Machine Learning Specialization (Stanford University)</li>
+              <li>Business Intelligence Analyst (Coursera)</li>
+              <li>Statistics and R (Harvard Online)</li>
+            </ul>
+          </div>
+          <div class="about-block">
+            <h3>languages</h3>
+            <ul class="inline-list">
+              <li>Spanish</li>
+              <li>Portuguese</li>
+              <li>English</li>
+              <li>Italian</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2 class="section-label">// projects</h2>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2 class="section-label">// contact</h2>
+      <ul class="contact-list">
+        <li><span class="key">phone</span><a href="tel:+610450652163">+61 0450 652 163</a></li>
+        <li><span class="key">email</span><a href="mailto:leandrofaleroo@gmail.com">leandrofaleroo@gmail.com</a></li>
+        <li><span class="key">location</span><span>Gold Coast, Australia</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> leo falero</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
