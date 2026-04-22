@@ -588,6 +588,7 @@ footer {
 @media (max-width: 479px) {
   h1 { font-size: 1.8rem; }
   .hero { padding: 1.5rem 0 3rem; margin-bottom: 3rem; }
+  .typed-area { min-height: 3.2em; }
   .hero-ctas {
     flex-direction: column;
     gap: 0.5rem;

@@ -28,7 +28,7 @@ const siteData = {
     },
     {
       cols: 3,
-      title: "Data Explorer App",
+      title: "Data explorer app",
       description: "Free app I made for data scientists and data analysts to perform Exploratory Data Analysis (EDA). You can upload a CSV or Excel file, and it will generate an HTML report that includes the distribution of each variable, missing values, correlations between features, potential anomalies, and statistical summaries. (Note: If you visit the app and it's sleeping, click to wake it up)",
       tech: ["Python", "Streamlit", "Pandas", "Plotly"],
       links: [
