@@ -209,7 +209,7 @@ body::before {
 
 /* ===== HERO ===== */
 .hero {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
   margin-bottom: 0rem;
 }
 
@@ -245,7 +245,7 @@ h1 {
 .typed-area {
   display: flex;
   align-items: baseline;
-  min-height: 1.6em;
+  min-height: 3.2em;
   font-size: 0.85rem;
   margin-bottom: 2rem;
 }
@@ -392,6 +392,7 @@ h1 {
 
 /* ===== SECTIONS ===== */
 .section {
+  margin-top: -1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -588,7 +589,6 @@ footer {
 @media (max-width: 479px) {
   h1 { font-size: 1.8rem; }
   .hero { padding: 1.5rem 0 3rem; margin-bottom: 3rem; }
-  .typed-area { min-height: 3.2em; }
   .hero-ctas {
     flex-direction: column;
     gap: 0.5rem;
