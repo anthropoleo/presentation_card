@@ -184,9 +184,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     localStorage.setItem('theme', theme);
   }
 
-  const saved = localStorage.getItem('theme');
-  const init = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  applyTheme(init);
+  applyTheme(localStorage.getItem('theme') || 'dark');
 
   btn.addEventListener('click', function () {
     applyTheme(root.dataset.theme === 'light' ? 'dark' : 'light');
