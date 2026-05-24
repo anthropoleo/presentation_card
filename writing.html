@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing | Leo Falero</title>
+  <meta name="description" content="Occasional writing by Leo Falero — applied AI, data science, and things worth putting into words.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Slideshow background -->
+  <div id="bg" aria-hidden="true"></div>
+
+  <!-- Site nav -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-link">[home]</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">[light]</button>
+  </nav>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Vignette overlay -->
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Ambient glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <main class="container">
+    <section class="hero">
+      <p class="hero-label">// writing</p>
+      <h1>Writing</h1>
+      <p class="tagline">Occasional thoughts. One or twice a year, when something is worth the words.</p>
+    </section>
+
+    <section class="section">
+      <div id="writing-grid" class="writing-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> leo falero</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

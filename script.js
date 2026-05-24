@@ -2,6 +2,16 @@
 const siteData = {
   name: "Leandro Falero",
   tagline: "Applied AI, analytics, and tools that people actually use.",
+  posts: [
+    // To add a post: copy this object, fill in the fields, drop the HTML file in posts/
+    // {
+    //   slug: "posts/your-post-slug.html",
+    //   title: "Your Post Title",
+    //   date: "2025-01",
+    //   excerpt: "One or two sentences about what this is.",
+    //   image: null   // or a path like "assets/post-cover.jpg"
+    // },
+  ],
   typedLines: [
     "Hi!",
     "Thanks for stopping by.",
@@ -42,6 +52,7 @@ const siteData = {
 // ===== TYPEWRITER =====
 (function () {
   const el = document.getElementById("typed-output");
+  if (!el) return;
   const lines = siteData.typedLines;
   let lineIndex = 0;
   let charIndex = 0;
@@ -84,6 +95,7 @@ const siteData = {
 // ===== RENDER PROJECTS =====
 (function () {
   const grid = document.getElementById("project-grid");
+  if (!grid) return;
 
   siteData.projects.forEach((project) => {
     const card = document.createElement("div");
@@ -126,10 +138,11 @@ const siteData = {
 
 // ===== SLIDESHOW BACKGROUND =====
 (function () {
+  var base = document.documentElement.dataset.assetBase || '';
   var images = {
-    'assets/bg01.jpg': 'center',
-    'assets/bg02.jpg': 'center',
-    'assets/bg03.jpg': 'center'
+    [base + 'assets/bg01.jpg']: 'center',
+    [base + 'assets/bg02.jpg']: 'center',
+    [base + 'assets/bg03.jpg']: 'center'
   };
   var delay = 6000;
   var pos = 0, lastPos = 0;
@@ -170,8 +183,38 @@ const siteData = {
   }, delay);
 })();
 
+// ===== RENDER WRITING PAGE =====
+(function () {
+  const grid = document.getElementById("writing-grid");
+  if (!grid) return;
+
+  const posts = siteData.posts;
+  if (!posts || !posts.length) {
+    grid.innerHTML = '<p class="writing-empty">&gt; no posts yet_</p>';
+    return;
+  }
+
+  posts.forEach(function (post) {
+    const card = document.createElement("article");
+    card.className = "post-card";
+    let html = "";
+    if (post.image) {
+      html += `<img class="post-card-image" src="${post.image}" alt="${post.title}" loading="lazy">`;
+    }
+    html += `<div class="post-card-body">
+      <p class="post-card-date">${post.date}</p>
+      <h2 class="post-card-title">${post.title}</h2>
+      <p class="post-card-excerpt">${post.excerpt}</p>
+      <a href="${post.slug}" class="post-card-link">[read &rarr;]</a>
+    </div>`;
+    card.innerHTML = html;
+    grid.appendChild(card);
+  });
+})();
+
 // ===== FOOTER YEAR =====
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ===== THEME TOGGLE =====
 (function () {
