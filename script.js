@@ -3,14 +3,13 @@ const siteData = {
   name: "Leandro Falero",
   tagline: "Applied AI, analytics, and tools that people actually use.",
   posts: [
-    // To add a post: copy this object, fill in the fields, drop the HTML file in posts/
-    // {
-    //   slug: "posts/your-post-slug.html",
-    //   title: "Your Post Title",
-    //   date: "2025-01",
-    //   excerpt: "One or two sentences about what this is.",
-    //   image: null   // or a path like "assets/post-cover.jpg"
-    // },
+    {
+      slug: "posts/ai-bad-news-good-news.html",
+      title: "AI: The bad news and the good news",
+      date: "2026-05",
+      excerpt: "On AI replacing workers, the hype versus reality, and why we still have time to get this right.",
+      image: "assets/ms-ai-chief.png"
+    },
   ],
   typedLines: [
     "Hi!",
