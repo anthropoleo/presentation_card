@@ -18,8 +18,14 @@
 
   <!-- Site nav -->
   <nav class="site-nav">
-    <a href="index.html" class="nav-link">[home]</a>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">[light]</button>
+    <div class="burger-wrap">
+      <button class="burger-btn" id="burger-btn" aria-label="Open menu" aria-expanded="false">[≡]</button>
+      <div class="burger-menu" id="burger-menu">
+        <a href="index.html" class="burger-link">[home]</a>
+        <a href="index.html#contact" class="burger-link">[contact]</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Scanline overlay -->

@@ -16,10 +16,16 @@
   <!-- Slideshow background -->
   <div id="bg" aria-hidden="true"></div>
 
-  <!-- Site nav (writing link + theme toggle) -->
+  <!-- Site nav -->
   <nav class="site-nav">
-    <a href="writing.html" class="nav-link">[writing]</a>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">[light]</button>
+    <div class="burger-wrap">
+      <button class="burger-btn" id="burger-btn" aria-label="Open menu" aria-expanded="false">[≡]</button>
+      <div class="burger-menu" id="burger-menu">
+        <a href="writing.html" class="burger-link">[writing]</a>
+        <a href="#contact" class="burger-link">[contact]</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Scanline overlay -->

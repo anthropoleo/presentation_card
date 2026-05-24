@@ -216,6 +216,29 @@ const siteData = {
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// ===== BURGER MENU =====
+(function () {
+  const btn = document.getElementById('burger-btn');
+  const menu = document.getElementById('burger-menu');
+  if (!btn || !menu) return;
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const open = menu.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open);
+  });
+
+  document.addEventListener('click', function () {
+    menu.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+
+  menu.addEventListener('click', function () {
+    menu.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+})();
+
 // ===== THEME TOGGLE =====
 (function () {
   const root = document.documentElement;
