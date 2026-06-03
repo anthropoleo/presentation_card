@@ -2,15 +2,7 @@
 const siteData = {
   name: "Leandro Falero",
   tagline: "Applied AI, analytics, and tools that people actually use.",
-  posts: [
-    {
-      slug: "posts/ai-bad-news-good-news.html",
-      title: "AI: The bad news and the good news",
-      date: "2026-05",
-      excerpt: "On AI replacing workers, the hype versus reality, and why we still have time to get this right.",
-      image: "assets/ms-ai-chief.png"
-    },
-  ],
+  posts: [],
   typedLines: [
     "Hi!",
     "Thanks for stopping by.",
